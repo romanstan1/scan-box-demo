@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+html {
+  display: block;
+  min-height: 100%; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 100%;
+  display: block;
+  position: relative; }
+  body 2
+div#root {
+    min-height: 100%; }
+    body 2
+div#root > div {
+      min-height: 100%; }
+
+div#main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 40px; }
+
+div.search-bar {
+  position: relative;
+  width: 80%; }
+  div.search-bar input {
+    width: 100%;
+    line-height: 70px;
+    height: 60px;
+    outline: none;
+    border: 0px solid grey;
+    border-bottom: 3px solid black;
+    text-indent: 2px;
+    font-size: 22px;
+    padding-bottom: 8px;
+    font-family: 'Source Sans Pro', sans-serif; }
+    div.search-bar input::placeholder {
+      color: black; }
+    div.search-bar input:focus::placeholder {
+      color: white; }
+  div.search-bar a {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    height: 32px;
+    width: 32px;
+    display: inline-block; }
+
+div.webcam {
+  background: black;
+  position: absolute; }
+  div.webcam > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
+    div.webcam > div video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%; }
+    div.webcam > div > div.CameraControls {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      div.webcam > div > div.CameraControls div.capture-button {
+        position: relative;
+        background: white;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        cursor: pointer; }
+        div.webcam > div > div.CameraControls div.capture-button::after {
+          content: '';
+          position: absolute;
+          width: 46px;
+          height: 46px;
+          left: 6px;
+          top: 6px;
+          border-radius: 50%;
+          border: 1px solid black; }
+
+a.cancel-text {
+  position: absolute;
+  left: 40px;
+  bottom: 37px;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-transform: uppercase; }
+
+div#menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px; }
+  div#menu a.menu-button {
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    width: 80%;
+    height: 64px;
+    line-height: 64px;
+    background: #159a52;
+    color: white; }
+
+a.cancel {
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  width: 27px;
+  height: 27px;
+  display: inline-block; }
+  a.cancel:before, a.cancel:after {
+    position: absolute;
+    left: 13px;
+    top: -1px;
+    content: ' ';
+    height: 30px;
+    width: 4px;
+    background: #159a52; }
+  a.cancel:before {
+    transform: rotate(45deg); }
+  a.cancel:after {
+    transform: rotate(-45deg); }
+
+div#check-photo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  div#check-photo div.imagewrap {
+    display: flex;
+    height: 84%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; }
+    div#check-photo div.imagewrap img {
+      height: 100%; }
+  div#check-photo div.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 16%; }
+    div#check-photo div.buttons a {
+      width: 36%;
+      line-height: 61px;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      text-decoration: none;
+      background: #159a52;
+      display: inline-block;
+      border: 3px solid #159a52; }
+      div#check-photo div.buttons a.retake {
+        background: white;
+        color: #159a52; }
+
+div#plp {
+  height: 100vh;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  div#plp div.content {
+    text-align: center; }
+    div#plp div.content div.text {
+      margin-top: 220px;
+      padding-bottom: 30px; }
+    div#plp div.content a.retake {
+      margin: 20px 0;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      width: 200px;
+      height: 54px;
+      line-height: 54px;
+      background: #159a52;
+      color: white; }
