@@ -72,11 +72,11 @@ div.webcam {
       top: 0;
       right: 0;
       left: 0;
-      bottom: 0;
+      bottom: 10px;
       width: 100%; }
     div.webcam > div > div.CameraControls {
       position: absolute;
-      bottom: 15px;
+      bottom: 20px;
       width: 100%;
       display: flex;
       justify-content: center; }
@@ -102,7 +102,7 @@ div.webcam {
 a.cancel-text {
   position: absolute;
   left: 40px;
-  bottom: 37px;
+  bottom: 42px;
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -164,6 +164,7 @@ div#check-photo {
     align-items: center;
     overflow: hidden; }
     div#check-photo div.imagewrap img {
+      transform: rotate(90deg);
       height: 100%; }
   div#check-photo div.buttons {
     display: flex;

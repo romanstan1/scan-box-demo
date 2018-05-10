@@ -165,7 +165,7 @@ class Camera extends PureComponent {
           autoPlay
           // playsInline
           ref={video => (this.video = video)}
-          style={{ background: 'black', display: 'block', width: '100%', height: '100%' }
+          style={{ background: 'black', display: 'block', width: '100%', height: '90%' }
             // responsive
             //   ? { background: 'black', display: 'block', width: '100%', height: '100%' }
             //   : { background: 'black', display: 'block' }

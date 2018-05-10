@@ -5,8 +5,6 @@ import Camera from './camera/Camera.js';
 import {imageTaken} from '../store/modules/actions.js';
 import {push} from 'react-router-redux';
 
-// "react-router-redux": "^5.0.0-alpha.6",
-// console.log('push', push)
 const CaptureButton = ({ onClick }) =>
   <div className='capture-button' onClick={onClick} type="button">
   </div>
@@ -18,16 +16,9 @@ class WebcamParent extends Component {
   }
 
   handleCapture = (data) => {
-    // const base64 = "b'" + data.slice(23, data.length) + "'"
     const base64 = data.slice(23, data.length)
     this.props.dispatch(imageTaken(base64))
     this.props.dispatch(push('/checkphoto'))
-
-    // this.context.store.dispatch(push('/search?id=123'))
-    // this.props.dispatch(takePhoto(base64))
-    // if(!!data) this.setState({ result: data})
-    // var win = window.open(data, '_blank');
-    // win.focus();
   }
 
   render() {

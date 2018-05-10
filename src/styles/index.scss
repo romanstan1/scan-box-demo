@@ -70,7 +70,6 @@ div.search-bar {
     top: 5px;
     height: 32px;
     width: 32px;
-    // background: red;
     display: inline-block;
   }
 }
@@ -90,18 +89,12 @@ div.webcam {
       top:0;
       right: 0;
       left: 0;
-      bottom: 0;
+      bottom: 10px;
       width: 100%;
-      // height: 90vh;
-      // position: fixed;
-      // right: 0;
-      // bottom: 0;
-      // width: 100%;
-      // height: auto;
     }
     > div.CameraControls {
       position: absolute;
-      bottom:15px;
+      bottom:20px;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -112,7 +105,6 @@ div.webcam {
         border-radius: 50%;
         width: 60px;
         height: 60px;
-        // line-height: 44px;
         text-align: center;
         cursor: pointer;
         &::after {
@@ -123,7 +115,6 @@ div.webcam {
           left: 6px;
           top: 6px;
           border-radius: 50%;
-          // background: red;
           border: 1px solid black;
         }
       }
@@ -134,7 +125,7 @@ div.webcam {
 a.cancel-text {
   position: absolute;
   left: 40px;
-  bottom: 37px;
+  bottom: 42px;
   text-decoration: none;
   color: white;
   font-weight: 300;
@@ -150,7 +141,6 @@ div#menu {
   justify-content:center;
   align-items: center;
   width: 100%;
-  // padding-bottom: 40px;
   padding-top: 40px;
   a.menu-button {
     margin: 10px 0;
@@ -165,17 +155,6 @@ div#menu {
     color: white;
   }
 }
-//
-// div.capture-button {
-//   background: $green;
-//   color: white;
-//   width: 50%;
-//   height: 44px;
-//   line-height: 44px;
-//   text-align: center;
-//   cursor: pointer;
-// }
-
 
 a.cancel {
   position: absolute;
@@ -218,6 +197,7 @@ div#check-photo {
     align-items: center;
     overflow: hidden;
     img {
+      transform: rotate(90deg);
       // display: block;
       height: 100%;
       // width: 100%;

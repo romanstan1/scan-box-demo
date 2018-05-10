@@ -50,7 +50,7 @@ const switchButtonStyle = {
   background: 'none',
   border: 'none',
   cursor: 'pointer',
-  display: 'flex',
+  display: 'none',
   height: '40px',
   justifyContent: 'center',
   position: 'absolute',

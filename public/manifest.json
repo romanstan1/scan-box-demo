@@ -1,15 +1,16 @@
 {
-  "short_name": "Scan Box",
-  "name": "Scan Box",
+  "short_name": "Specsavers RI",
+  "name": "Specsavers Reverse Image",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src":"fav.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "/?utm_source=homescreen",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation":"portrait"
 }
