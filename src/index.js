@@ -6,6 +6,7 @@ import { ConnectedRouter } from 'react-router-redux'
 import store from './store'
 import {Provider} from 'react-redux'
 import {history} from './store'
+import registerServiceWorker from './registerServiceWorker'
 
 render(
   <Provider store={store}>
@@ -14,3 +15,6 @@ render(
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root'));
+
+
+registerServiceWorker()
